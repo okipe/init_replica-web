@@ -3,6 +3,9 @@
 $color-background: #ffffff;
 $color-texto: #424242;
 $color-amarillo: #fce80f;
+$color-subtitulo: #2280e6;
+$color-texto-bajada: #808080;
+$color-gris-ligero: #bbbbbb;  
 
 html {
     font-size: 62.5%;
@@ -23,10 +26,62 @@ body{
     background-color: $color-background;
 }
 
+.mg-top {
+    margin-top: 11rem;
+}
+
+.mg-bottom {
+    margin-bottom: 11rem;
+}
+
+.fg {
+    font-size: 7rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+// .justify-center {
+//     justify-content: space-around;
+// }
+
+// .justify-center {
+//     justify-content: space-around;
+// }
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
 .container {
     max-width: 1100px;
     width: 85%;
     margin: 0 auto;
+}
+
+.dos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
 }
 
 // HEADER
@@ -68,6 +123,66 @@ body{
 
         &:last-child {
             background-color: $color-amarillo;
+            border-radius: 3rem;
+            padding: 1rem 3rem;
         }
     }
 }
+
+// SECTION
+
+.contenido {
+    text-align: left;
+}
+
+.init {
+    color: $color-subtitulo;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    margin: 5rem 0 1rem 0;
+}
+
+.info-text {
+    margin-top: 1.5rem;
+    width: 30rem;
+    line-height: 3.5rem;
+    font-size: 1.8rem;
+    color: $color-texto-bajada;
+}
+
+.group-btn {
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 245px;
+    text-align: center;
+    border-radius: 1rem;
+    color: $color-texto;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1.2rem 2.5rem;
+    flex-basis: calc(50% - 1rem);
+}
+
+.btn-yellow{
+    background-color: $color-amarillo;
+}
+
+.border {
+    border: solid 2px $color-texto-bajada;
+}
+
+// LINE
+
+.line-dotted {
+    height: 4px;
+    border-top: 4px dotted $color-gris-ligero;
+    margin-top: 4rem;
+    padding: 1.8rem 0;
+}
+
+// HTML
