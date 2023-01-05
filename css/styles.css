@@ -18,6 +18,14 @@ body {
   background-color: #ffffff;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  width: 100%;
+}
+
 .mg-top {
   margin-top: 11rem;
 }
@@ -28,6 +36,12 @@ body {
 
 .fg {
   font-size: 7rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.fm {
+  font-size: 6rem;
   margin: 0;
   font-weight: bold;
 }
