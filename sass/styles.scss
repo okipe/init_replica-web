@@ -34,14 +34,6 @@ body{
     width: 100%;
 }
 
-.mg-top {
-    margin-top: 11rem;
-}
-
-.mg-bottom {
-    margin-bottom: 11rem;
-}
-
 .fg {
     font-size: 7rem;
     margin: 0;
@@ -49,7 +41,7 @@ body{
 }
 
 .fm {
-    font-size: 6rem;
+    font-size: 5.8rem;
     margin: 0;
     font-weight: bold;
 }
@@ -66,13 +58,17 @@ body{
     justify-content: center;
 }
 
-// .justify-center {
-//     justify-content: space-around;
-// }
+.justify-between {
+    justify-content: space-around;
+}
 
-// .justify-center {
-//     justify-content: space-around;
-// }
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
 
 .align-start {
     align-items: flex-start;
@@ -90,6 +86,14 @@ body{
     max-width: 1100px;
     width: 85%;
     margin: 0 auto;
+}
+
+.mg-top {
+    margin-top: 11rem;
+}
+
+.mg-bottom {
+    margin-bottom: 11rem;
 }
 
 .dos-columnas {
@@ -201,8 +205,6 @@ body{
 
 // PRIMERA SECCIÓN
 
-//.animate.one {}
-
 .displacement {
     display: inline-block;
     text-align: center;
@@ -237,7 +239,7 @@ body{
 }
 
 .txt-p-end {
-    text-align: center;
+    text-align: end;
 }
 
 .txt-p-start {
@@ -295,4 +297,81 @@ body{
 .txt-p-main-two {
     width: 447px;
     margin-bottom: 2.4rem;
+}
+
+.color-dark {
+    color: $color-texto;
+}
+
+.txt-p-main-two {
+    width: 447px;
+    margin-bottom: 2.4rem;
+}
+
+// FOOTER
+
+.img-footer {
+    width: 97px;
+    height: 65px;
+}
+
+.autores {
+    > li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 15rem;
+        margin-bottom: 7px;
+        font-weight: bold;
+        color: $color-texto-bajada;
+    }
+}
+
+.btn-footer {
+    > a {
+        border-radius: 3rem;
+        padding: 1.4rem 4rem;
+        color: $color-texto;
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 300ms;
+
+        &:hover {
+            transform: scale(1.1,1.1);
+        }
+    }
+}
+
+.infinito-div {
+    width: 40rem;
+    height: 6rem;
+    
+    &:hover .div-animation {
+        opacity: 1;
+        background-color: $color-subtitulo; 
+    }
+}
+
+.img-transition {
+    cursor: pointer;
+}
+
+.div-animation {
+    opacity: 0;
+    font-size: 13px;
+    color: $color-background;
+    width: 345px;
+    height: 68px;
+    padding: 30px 24px 3px 3px;
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    transition: all 500ms;
+}
+
+.txt-footer {
+    font-size: 15px;
+    font-weight: lighter;
+    color: $color-texto;
+    font-style: italic;
 }
