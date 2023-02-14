@@ -12,6 +12,9 @@ En este proyecto se ha replicado el **sitio web de una comunidad tecnológica**,
 - Se empleó la anidación de Sass para aumentar la sencillez en la lectura del código.
 - Se empleó JavaScript para animar los títulos de la página.
 
-## Resultado
-A continuación, se muestra el resultado del sitio web INIT. [Página disponible](#).
+![Screenshot en un archivo Sass y JavaScript](img_md/screenshot_vscode.png)
 
+## Resultado
+A continuación, se muestra el resultado del sitio web INIT. [Página disponible](https://okipe.github.io/init_replica-web/).
+
+![Vista de la web](img_md/screenshot_desktop.png)
